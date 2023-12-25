@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    background-color: #ddd;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #555;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Zwei Spalten: eine für Text, eine für Bild */
+    gap: 80px;
+    padding: 20px;
+    justify-content: space-evenly; /* Zentrieren des Inhalts horizontal */
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+}
+
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.skip-link {
+    position: absolute;
+    left: -999em;
+}
+
+.skip-link:focus {
+    left: auto;
+    color: aliceblue;
+}
+
+
+/* Styling für Tipps & Tricks */
+.tip {
+    width: 100%; 
+    margin-bottom: 20px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+}
+
+.tip img {
+    max-width: 90%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+}
+
+.tip p {
+    margin: 55px;
+    width: 70%;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-evenly;
+    height: 1000px;
+}
+
+.div1{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    justify-content: center;
+}
+.div2{
+    display: flex;
+    justify-content: end;
+    align-items: stretch;
+    width: 20%;
+   
+}
+.p1{
+    width: 80%;
+    margin: 95px 75px 95px 75px;
+}
+
+.img2{
+    margin-top: 55px;
+    height: 100%;
+}
